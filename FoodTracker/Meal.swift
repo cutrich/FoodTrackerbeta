@@ -2,23 +2,30 @@
 //  Meal.swift
 //  FoodTracker
 //
-//  Created by Stevo on 10/31/17.
+//  Created by Stevo on 11/1/17.
 //  Copyright © 2017 Stevo. All rights reserved.
 //
 
 import UIKit
+
+
+
 class Meal {
     
-    // MARK: properties
+    //MARK: Properties
     
     var name: String
     var photo: UIImage?
     var rating: Int
     
-    //Mark: Initilization
+    //MARK: Initialization
+    
+    
+    
     init?(name: String, photo: UIImage?, rating: Int) {
         
-        //initialization should if there is no name or if the rating is negative
+        // Initialization should fail if there is no name or if the rating is negative.
+        
         
         // The name must not be empty
         guard !name.isEmpty else {
@@ -30,11 +37,15 @@ class Meal {
             return nil
         }
         
-        //initilize stored properties
+
+        
+        // Initialize stored properties.
         self.name = name
         self.photo = photo
         self.rating = rating
+        
     }
     
-    
+
 }
+
