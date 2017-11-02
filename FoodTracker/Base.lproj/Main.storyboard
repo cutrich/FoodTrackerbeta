@@ -48,6 +48,7 @@
                                     <outlet property="nameLabel" destination="vWE-NN-6hT" id="4ts-6g-EKk"/>
                                     <outlet property="photoImageView" destination="763-Kc-EXw" id="VZ8-4Q-ad2"/>
                                     <outlet property="ratingControl" destination="slK-jo-zDz" id="M1P-4q-Cqn"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="vi3-yr-M9o"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -67,7 +68,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="-790" y="152"/>
+            <point key="canvasLocation" x="-708" y="152"/>
         </scene>
         <!--Meals-->
         <scene sceneID="tne-QT-ifu">
@@ -185,10 +186,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="skl-wH-JzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="154" y="152"/>
+            <point key="canvasLocation" x="137" y="600"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="vi3-yr-M9o"/>
+    </inferredMetricsTieBreakers>
 </document>
