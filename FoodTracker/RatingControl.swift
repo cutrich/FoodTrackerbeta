@@ -25,6 +25,7 @@ import UIKit
     var rating = 0 {
         didSet {
             updateButtonSelectionStates()
+            var rate = 1
         }
     }
     //MARK:initilization
